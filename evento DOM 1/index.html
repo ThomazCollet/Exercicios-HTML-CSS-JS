@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: ;
+        }
+        div#botão{
+            background-color: rgb(183, 12, 12);
+            height: 150px;
+            width: 300px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+    </style>
+    <title>Exercicio 001</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Java Script - Exercicio 001</h1>
+    <h2>Crie um botão interativo que muda de cor ao ser clicado e que mude o conteudo escrito dentro dele quando o mouse passa por cima</h2>
+
+    <div id="botão" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja!
+    </div>
+    <script>
+        var botão = document.getElementById('botão')
+        function clicar(){
+        botão.innerText = 'Clicou!'
+        botão.style.backgroundColor = 'green'
+        document.body.style.backgroundColor = "rgb(118, 118, 20)"
+        }
+
+        function entrar(){
+            botão.innerText = 'clique!'
+        }
+
+        function sair(){
+            botão.innerHTML = 'Interaja!'
+            botão.style.backgroundColor = 'rgb(183, 12, 12)'
+            document.body.style.backgroundColor = 'white'
+            
+        }
+    </script>
+    
+</body>
+</html>

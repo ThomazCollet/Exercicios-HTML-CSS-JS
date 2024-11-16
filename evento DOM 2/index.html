@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio002</title>
+</head>
+<body>
+    <h1>Java Script - Exercicio 002</h1>
+    <h2>Somando Valores</h2>
+    <p>Crie um programa que receba 2 valores digitados pelo usuario e realize uma soma simples</p>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    
+    <script>
+      
+      function somar(){
+        
+        var n1 = Number(document.getElementById('txtn1').value)
+        var n2 = Number(document.getElementById('txtn2').value) 
+        var res = document.getElementById('res')
+        var s = n1 + n2
+        res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}`
+    }
+    </script>
+</body>
+</html>

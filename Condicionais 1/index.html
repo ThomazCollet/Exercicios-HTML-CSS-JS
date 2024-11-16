@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais 1</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Java Script - condicionais 1 <br> Exercicio 003</h1>
+    <p>Crie um programa que leia a idade de uma pessoa e responda se ela vota, nao vota ou pode votar opcionalmente.</p>
+    Digite sua idade
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Submeter" onclick="calcular()">
+    <div id="res"></div>
+    
+    <script>
+        function calcular(){
+            var idade = Number(document.getElementById('idade').value)
+            var res = document.getElementById('res')
+            if(idade < 16){
+                res.innerText = 'Você ainda não pode votar.'
+            }
+                else if(idade >= 16 && idade < 18 || idade >= 65){
+                    res.innerText = 'Voto opcional.'
+            }
+                else{
+                    res.innerText = 'Voto obrigatório.'
+                } 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais 2</title>
+</head>
+<body>
+    <h1>Java Script - Condicionais 2 <br> Exercicio 004</h1>
+    <p>Crie um codigo que diga o dia, a hora e o dia da semana atual.</p>
+    <hr>
+     <input type="button" value="Clique aqui para descobrir que dia é hoje!" onclick="clicar()">
+     <div id="resultado"></div>
+     <script>
+        function clicar(){
+            var agora = new Date()
+            
+            var data = agora.getDate()
+            var dia = agora.getDay()
+            var mes = agora.getMonth() + 1
+            var hora = agora.getHours()
+            var min = agora.getMinutes()
+            var res = document.getElementById('resultado')
+            var semana = ''
+            if (min < 10) {
+                min = '0' + min;
+            }
+            if (mes < 10){
+                mes = '0' + mes
+            }
+            if (data < 10){
+                data = '0' + data
+            }
+
+            switch (dia){
+                case 0:
+                    semana = 'Domingo'
+                    break
+                case 1:
+                    semana = 'Segunda-feira'
+                    break
+                case 2:
+                    semana = 'Terça-feira'
+                    break
+                case 3:
+                    semana = 'Quarta-feira'
+                    break
+                case 4:
+                    semana = 'Quinta-Feira'
+                    break
+                case 5:
+                    semana = 'Sexta-feira'
+                    break
+                case 6:
+                    semana = 'Sabado'
+                    break
+            }
+
+
+            res.innerHTML = `Data de hoje: ${data}/${mes}<br> Dia da semana: ${semana}<br> Hora: ${hora}:${min}`
+        }
+     </script>
+</body>
+</html>

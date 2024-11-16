@@ -1,0 +1,29 @@
+body {
+    background-color: #E0F7E9; /* Cor de fundo suave */
+    font: normal 15pt Arial; /* Fonte padrão */
+}
+
+header {
+    color: #005B33; /* Cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+}
+
+section {
+    background-color: white; /* Cor de fundo da seção */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    width: 500px; /* Largura da seção */
+    margin: auto; /* Centraliza a seção na tela */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384); /* Sombra ao redor da seção */
+}
+
+div#res {
+    margin-top: 20px; /* Espaço acima da div de resultados */
+    margin-bottom: 20px; /* Espaço abaixo da div de resultados */
+}
+
+footer {
+    color: #005B33; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    font-style: italic; /* Estilo em itálico */
+}

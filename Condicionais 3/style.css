@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(78, 142, 216); /* Cor de fundo padrão */
+    font-size: 20pt; /* Tamanho da fonte */
+    font-family: 'Times New Roman', Times, serif; /* Fonte da página */
+}
+
+header {
+    color: white; /* Cor do texto do cabeçalho */
+    text-align: center; /* Alinhamento do texto no centro */
+}
+
+section {
+    background-color: white; /* Cor de fundo da seção */
+    width: 500px; /* Largura fixa da seção */
+    margin: auto; /* Centraliza a seção na página */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.365); /* Sombra da seção */
+    padding: 15px; /* Espaçamento interno da seção */
+    border-radius: 10px; /* Bordas arredondadas da seção */
+    text-align: center; /* Alinhamento do texto no centro */
+    margin-top: 30px; /* Espaçamento acima da seção */
+}
+
+div#foto img {
+    border-radius: 50%; /* Imagem em formato circular */
+    width: 250px; /* Largura da imagem */
+    height: 250px; /* Altura da imagem */
+    display: block; /* Para que o margin auto funcione */
+    margin: 30px auto; /* Centraliza a imagem com margens superior e inferior de 30px */
+}
+
+footer {
+    color: white; /* Cor do texto do rodapé */
+    text-align: center; /* Alinhamento do texto no centro */
+    font-style: italic; /* Texto em itálico */
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thomazzine Pizzeria</title>
+</head>
+<body>
+    <h1>Thomazzine Pizzeria</h1>
+    <h2>Faça seu Pedido Online:</h2>
+    <form action="" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="tel" id="tel"><br>
+
+        <label for="sabor">Sabor:</label>
+        <select name="sabor" id="sabor">
+            <option value="Mussarela">Mussarela</option>
+            <option value="Calabresa">Calabresa</option>
+            <option value="Marguerita">Marguerita</option>
+            <option value="Frango com catupiry">Frango com catupiry</option>
+            <option value="Peito de peru com catupiry">Peito de peru com catupiry</option>
+            <option value="3 Queijos">3 Queijos</option>
+            <option value="4 Queijos">4 Queijos</option>
+            <option value="5 Queijos">5 Queijos</option>
+            <option value="Napolitana">Napolitana</option>
+            <option value="Portuguesa">Portuguesa</option>
+            <option value="Palmito">Palmito</option>
+            <option value="Pepperoni">Pepperoni</option>
+        </select><br>
+
+        <label for="tamanho">Tamanho:</label>
+        <input type="radio" name="tamanho" id="tamanho_grande" value="G" checked>Grande
+        <input type="radio" name="tamanho" id="tamanho_medio" value="M">Médio
+        <input type="radio" name="tamanho" id="tamanho_pequeno" value="P">Pequeno<br>
+
+        <label>Adicionais:</label>
+        <input type="checkbox" name="adicionais" value="borda">Borda de catupiry<br>
+        <input type="checkbox" name="adicionais" value="extra">Queijo extra<br>
+
+        <label for="doce">Sobremesa:</label>
+        <select name="doce" id="doce">
+            <option value="Não">Não</option>
+            <option value="Brigadeiro">Brigadeiro</option>
+            <option value="Brigadeiro com morango">Brigadeiro com morango</option>
+            <option value="Banana">Banana</option>
+            <option value="Romeu e Julieta">Romeu e Julieta</option>
+        </select><br>
+
+        <label for="tamanho2">Tamanho da sobremesa:</label>
+        <input type="radio" name="tamanho_sobremesa" id="tamanho_sobremesa_G" value="G">Grande
+        <input type="radio" name="tamanho_sobremesa" id="tamanho_sobremesa_M" value="M">Médio
+        <input type="radio" name="tamanho_sobremesa" id="tamanho_sobremesa_P" value="P">Pequeno<br>
+
+        <label>Chocolate extra?</label>
+        <input type="radio" name="chocolate_extra" value="Sim">Sim
+        <input type="radio" name="chocolate_extra" value="Não" checked>Não<br>
+
+        <label>Bebidas:</label><br>
+        <input type="checkbox" name="bebida" value="agua_com_gas">Água com gás<br>
+        <input type="checkbox" name="bebida" value="agua_sem_gas">Água sem gás<br>
+        <input type="checkbox" name="bebida" value="coca_350ml">Coca-cola 350ml<br>
+        <input type="checkbox" name="bebida" value="coca_600ml">Coca-cola 600ml<br>
+        <input type="checkbox" name="bebida" value="coca_2l">Coca-cola 2 Litros<br>
+        <input type="checkbox" name="bebida" value="guarana_350ml">Guaraná 350ml<br>
+        <input type="checkbox" name="bebida" value="guarana_2l">Guaraná 2 Litros<br>
+
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" placeholder="Exemplo: Sem cebola, sem gorgonzola..."></textarea><br>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+</body>
+</html>

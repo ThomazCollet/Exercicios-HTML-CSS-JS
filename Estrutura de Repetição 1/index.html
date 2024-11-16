@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"> <!-- Link para o arquivo de estilo CSS -->
+    <title>Estrutura de repetição 01</title> <!-- Título da página -->
+</head>
+<body>
+    <header>
+        <h1>Vamos contar?</h1> <!-- Título principal da página -->
+    </header>
+
+    <section>
+        <div id="cont"> <!-- Div que contém os inputs e o botão -->
+            <p>Início: <input type="number" name="inicio" id="inicio"></p>
+            <p>Fim: <input type="number" name="fim" id="fim"></p>
+            <p>Passo: <input type="number" name="passo" id="passo"></p>
+            <input type="button" value="Contar" onclick="contar()"> <!-- Botão que chama a função contar() -->
+        </div>
+        <div id="res"> <!-- Div que exibirá o resultado -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; ParçaSites</p> <!-- Rodapé da página -->
+    </footer>
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
